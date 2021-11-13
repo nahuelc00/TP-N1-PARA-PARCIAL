@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include "funciones.h"
 
-int main()
-{
+int main() {
     char seguir='s';
     int opcion=0;
 
-    while(seguir=='s')
-    {
+    while(seguir=='s') {
         printf("1- Ingresar 1er operando (A=x)\n");
         printf("2- Ingresar 2do operando (B=y)\n");
         printf("3- Calcular la suma (A+B)\n");
@@ -21,8 +19,7 @@ int main()
 
         scanf("%d",&opcion);
 
-        switch(opcion)
-        {
+        switch(opcion) {
             case 1:
                 break;
             case 2:
@@ -46,4 +43,5 @@ int main()
 
 
     return 0;
+  }
 }
