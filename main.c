@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include "funciones.h"
 
+
 int main() {
     char seguir='s';
     int opcion=0;
-
+    
     while(seguir=='s') {
         printf("1- Ingresar 1er operando (A=x)\n");
         printf("2- Ingresar 2do operando (B=y)\n");
