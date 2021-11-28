@@ -11,5 +11,4 @@ float dividir(float a, float b);
 
 float calcularFactorial(float a);
 
-
 #endif // FUNCIONES_H_INCLUDED
