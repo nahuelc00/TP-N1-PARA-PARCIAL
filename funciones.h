@@ -1,15 +1,16 @@
 #ifndef FUNCIONES_H_INCLUDED
 #define FUNCIONES_H_INCLUDED
 
-float sumar(float a, float b);
+int sumar(int a, int b);
 
-float restar(float a, float b);
+int restar(int a, int b);
 
-float multiplicar(float a, float b);
+int multiplicar(int a, int b);
 
-float dividir(float a, float b);
+int dividir(int a, int b);
 
-float calcularFactorial(float a);
+int calcularFactorial(int a);
 
+int validarNumero(char string[]);
 
 #endif // FUNCIONES_H_INCLUDED

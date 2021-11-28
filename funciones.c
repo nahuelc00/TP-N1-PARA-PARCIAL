@@ -1,26 +1,52 @@
-float sumar(float a, float b){
+#include "string.h"
+
+int sumar(int a, int b)
+{
     return a + b;
 }
 
-float restar(float a, float b){
+int restar(int a, int b)
+{
     return a - b;
 }
 
-float multiplicar(float a, float b){
+int multiplicar(int a, int b)
+{
     return a * b;
 }
 
-float dividir(float a, float b){ 
-    if (a > 0 && b == 0){
+int dividir(int a, int b)
+{
+    if (a > 0 && b == 0 || a == 0 && b == 0)
+    {
         return -1;
     }
     return a / b;
 }
 
-float calcularFactorial(float a){ 
-float resultado = 1; 
-for (int i = 1; a >= i; i++) {
-    resultado = resultado * i; 
- }
- return resultado;
- }
+int calcularFactorial(int a)
+{
+    int factorial;
+    if (a == 1 || a == 0)
+    {
+        return 1;
+    }
+    factorial = a * calcularFactorial(a - 1);
+
+    return factorial;
+}
+
+int validarNumero(char string[])
+{
+    for (int i = 0; i < strlen(string); i++)
+    {
+        if (string[i] != '\0')
+        {
+            if (string[i] < '0' || string[i] > '9')
+            {
+                return 0;
+            }
+            return 1;
+        }
+    }
+}
